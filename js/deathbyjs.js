@@ -23,7 +23,7 @@ console.log(arrWords.join(' '))
 string2('i love my daughter')
 
 
-// //STEP 3
+//STEP 3
 
 function string3(str) {
     let count = str.match(/[aeiou]/gi).length;
@@ -41,13 +41,11 @@ let result = string3(str)
 function string4(input4) {
     let id = Math.random(input4);
     console.log(id)
-
 }
 let input4 = prompt('enter the string to generate id:')
 let output4 = string4(input4)
+
 //STEP 5
-
-
 function Longest_Country_Name() {
    
 }
