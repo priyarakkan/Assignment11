@@ -2,9 +2,9 @@
 
 function string1(input1) {
     input1 = input1.toLowerCase().split('');
-    output = input1.sort();
-    output=output.join('');
-    console.log(output)
+    let  output1 = input1.sort().join('');;
+ 
+    console.log(output1)
     return   
 }
 string1('daughter')
@@ -23,7 +23,7 @@ console.log(arrWords.join(' '))
 string2('i love my daughter')
 
 
-//STEP 3
+// //STEP 3
 
 function string3(str) {
     let count = str.match(/[aeiou]/gi).length;
