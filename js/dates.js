@@ -18,8 +18,6 @@ let Weekend = (d = new Date()) => d.getDay() % 6 === 0;
 console.log(Weekend());
 
 //STEP 4
-//Create an application that gets yesterday’s day of the week. 
-//For instance, if today is Tuesday, the console window should display Monday.
 
 let date = new Date();
  let yesterday =date.setDate(date.getDate() - 1);

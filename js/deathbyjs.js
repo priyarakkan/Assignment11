@@ -2,7 +2,8 @@
 
 function string1(input1) {
     input1 = input1.toLowerCase().split('');
-    output = input1.sort().join('');
+    output = input1.sort();
+    output=output.join('');
     console.log(output)
     return   
 }
@@ -24,32 +25,31 @@ string2('i love my daughter')
 
 //STEP 3
 
-function string3(input3) {
-    let count = input3.match(/[aeiou]/gi).length;
+function string3(str) {
+    let count = str.match(/[aeiou]/gi).length;
     console.log(count)
     return count;
-    
- 
 }
-string2('i love my daughter')
+let str = prompt('enter a string:');
+let result = string3(str)
 
 //STEP 4
 //Write a JavaScript function that generates a string id (specified length) of random characters.
 
 //Sample Data and Output
 //Expected Output: RCv1SBUC or PmJkc2Y2 or nIi5L0FA
+function string4(input4) {
+    let id = Math.random(input4);
+    console.log(id)
 
-
+}
+let input4 = prompt('enter the string to generate id:')
+let output4 = string4(input4)
 //STEP 5
-//Write a JavaScript function that accepts a list of country names as input 
-//and returns the longest country name as output.
 
-//Sample Data and Output
-//Sample function: Longest_Country_Name(["Australia", "Germany", "United States of America"])
-//Expected output: "United States of America"
 
-function Longest_Country_Name([array]) {
-    console.log(array[0])
+function Longest_Country_Name() {
+   
 }
 
 
