@@ -23,20 +23,13 @@ string2('i love my daughter')
 
 
 //STEP 3
-//Write a JavaScript function that accepts a string as a parameter
-// and counts the number of vowels within the string.
 
-//Sample Data and Output
-//Example string: 'The quick brown fox'
-//Expected Output: 5
-
-function string2(input2) {
-    let arrWords = input2.split(' ')
-     
-for (let i=0; i<arrWords.length; i++) {
-    arrWords[i] =  arrWords[i].charAt(0).toUpperCase() +  arrWords[i].slice(1)  
-}
-console.log(arrWords.join(' '))
+function string3(input3) {
+    let count = input3.match(/[aeiou]/gi).length;
+    console.log(count)
+    return count;
+    
+ 
 }
 string2('i love my daughter')
 
